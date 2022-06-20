@@ -13,14 +13,14 @@ class Solution{
         
         //int dis = set<char>(str.begin(), str.end()).size();
         int end = 0, strt = 0;
-        unordered_map<int, int> mp1, mp2;
+        unordered_map<int, int> mp2;
         
-        for(auto &c: str) mp1[c]++;
+        int distCnt = set<char>(str.begin(), str.end()).size();
         
         int ans = INT_MAX;
         while(end < n){
             mp2[str[end]]++;
-            while(strt <= end and mp1.size() == mp2.size()){
+            while(strt <= end and distCnt == mp2.size()){
                 ans = min(ans, end-strt+1);
                 mp2[str[strt]]--;
                 if(mp2[str[strt]] == 0) mp2.erase(str[strt]);
