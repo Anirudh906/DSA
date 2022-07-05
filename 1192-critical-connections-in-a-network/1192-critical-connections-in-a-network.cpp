@@ -4,7 +4,7 @@ public:
     void solve(int u, vector<bool>& vis, vector<int>& disc, vector<int>& low,     vector<int>& parent, vector<vector<int>>& g, vector<vector<int>>& res) {
         
         vis[u] = true;
-        disc[u] = low[u] = ++t;
+        disc[u] = low[u] = t++;
         for (int v : g[u]) {
             if (!vis[v]) {
                 parent[v] = u;
