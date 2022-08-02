@@ -36,30 +36,3 @@ public:
 };
 
 
-
-//    K=K+1; // Include yourself.
-//         int lo = getMin(sweetness);
-//         int hi = getSum(sweetness);
-//         while (lo < hi) {
-//             int mid = (lo + hi + 1) >>> 1;
-//             if (split(sweetness, mid) < K) {
-//                 hi = mid - 1;
-//             } else {
-//                 lo = mid;
-//             }
-//         }
-//         return lo;
-//     }
-
-//     private int split(int[] arr, int minSweetness) {
-//         int peopleCount = 0;
-//         int sweetness = 0;
-//         for (int val : arr) {
-//             sweetness += val;
-//             if (sweetness >= minSweetness) {
-//                 peopleCount++;
-//                 sweetness = 0;
-//             }
-//         }
-//         return peopleCount;
-
